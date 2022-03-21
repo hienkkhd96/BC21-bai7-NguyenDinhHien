@@ -12,11 +12,228 @@
     <title>BC21-Bai7-NguyenDinhhien</title>
   </head>
   <body>
-    body
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="bai1-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#bai1"
+            type="button"
+            role="tab"
+            aria-controls="bai1"
+            aria-selected="true"
+          >
+            Bai1
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="bai2-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#bai2"
+            type="button"
+            role="tab"
+            aria-controls="bai2"
+            aria-selected="false"
+          >
+            Bai2
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="bai3-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#bai3"
+            type="button"
+            role="tab"
+            aria-controls="bai3"
+            aria-selected="false"
+          >
+            Bai3
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="bai4-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#bai4"
+            type="button"
+            role="tab"
+            aria-controls="bai4"
+            aria-selected="false"
+          >
+            Bai4
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="bai5-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#bai5"
+            type="button"
+            role="tab"
+            aria-controls="bai5"
+            aria-selected="false"
+          >
+            Bai5
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="tab-content" id="myTabContent">
+      <div
+        class="tab-pane fade show active"
+        id="bai1"
+        role="tabpanel"
+        aria-labelledby="bai1-tab"
+      >
+        <div class="container-fluid text-center">
+          <div class="head">
+            <div class="h3 pt-5">ĐỀ BÀI</div>
+            <h5 class="pt-2">
+              Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + … + n > 10000
+            </h5>
+            <h6 class="pt-2"></h6>
+          </div>
+          <h4 class="values__bai1"></h4>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="bai2"
+        role="tabpanel"
+        aria-labelledby="bai2-tab"
+      >
+        <div class="container text-center">
+          <div class="head">
+            <div class="h3 pt-5">ĐỀ BÀI</div>
+            <h5 class="pt-2">
+              Viết chương trình nhập vào 2 số x, n tính tổng: S(n) = x + x^2 +
+              x^3 + … + x^n (Sử dụng vòng lặp và hàm)
+            </h5>
+            <h6 class="pt-2"></h6>
+          </div>
+          <form class="form__bai2 row needs-validation">
+            <div class="mb-3 col-6">
+              <label for="soX__bai2" class="form-label">Nhập số X</label>
+              <input type="text" class="form-control" id="soX__bai2" required />
+              <div class="invalid-feedback">Vui lòng điền số hợp lệ.</div>
+            </div>
+            <div class="mb-3 col-6">
+              <label for="soN__bai2" class="form-label">Nhập số N</label>
+              <input
+                type="number"
+                class="form-control"
+                id="soN__bai2"
+                min="0"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary submit__bai2">
+              Submit
+            </button>
+          </form>
+          <h4 class="values__bai2 mt-3"></h4>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="bai3"
+        role="tabpanel"
+        aria-labelledby="bai3-tab"
+      >
+        <div class="container text-center">
+          <div class="head">
+            <div class="h3 pt-5">ĐỀ BÀI</div>
+            <h5 class="pt-2">Nhập vào n. Tính giai thừa 1*2*...n</h5>
+            <h6 class="pt-2"></h6>
+          </div>
+          <form class="form__bai3 needs-validation">
+            <div class="mb-3">
+              <label for="soN__bai3" class="form-label">Nhập số N</label>
+              <input
+                type="number"
+                class="form-control"
+                id="soN__bai3"
+                min="0"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary submit__bai3">
+              Submit
+            </button>
+            <h4 class="values__bai3 mt-3"></h4>
+          </form>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="bai4"
+        role="tabpanel"
+        aria-labelledby="bai4-tab"
+      >
+        <div class="container text-center">
+          <div class="head">
+            <div class="h3 pt-5">ĐỀ BÀI</div>
+            <h5 class="pt-2">
+              Hãy viết chương trình khi click vào button sẽ in ra 10 thẻ div.
+              Nếu div nào vị trí chẵn thì background màu đỏ và lẻ thì background
+              màu xanh.
+            </h5>
+            <button class="btn btn-primary button__bai4">Toggle</button>
+            <div class="values__bai4 mt-4"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="bai5"
+        role="tabpanel"
+        aria-labelledby="bai5-tab"
+      >
+        <div class="container text-center">
+          <div class="head">
+            <div class="h3 pt-5">ĐỀ BÀI</div>
+            <h5 class="pt-2">
+              Viết chương trình có một ô input, một button. Khi click vào button
+              thì in ra các số nguyên tố từ 1 tới giá trị của ô input
+            </h5>
+            <h6 class="pt-2"></h6>
+          </div>
+          <form class="form__bai5 needs-validation">
+            <label for="so__bai5" class="form-label">Nhập số bất kỳ</label>
+            <input
+              type="text"
+              class="form-control"
+              id="so__bai5"
+              min="0"
+              required
+            />
+            <div class="invalid-feedback">Vui lòng điền số hợp lệ.</div>
+            <button class="btn btn-primary button__bai5 mt-3">Xác nhận</button>
+          </form>
+          <div class="container overflow-auto">
+            <h4 class="values__bai5"></h4>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"
   ></script>
+  <script src="./js/formControl.js"></script>
+  <script src="./js/Bai1.js"></script>
+  <script src="./js/Bai2.js"></script>
+  <script src="./js/Bai3.js"></script>
+  <script src="./js/Bai4.js"></script>
+  <script src="./js/Bai5.js"></script>
 </html>
