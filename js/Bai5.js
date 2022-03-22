@@ -11,13 +11,13 @@ function isprime(n) {
 
   /*Số nhỏ hơn 2 không phải số nguyên tố => trả về 0*/
   if (n < 2) return (flag = 0);
-  else if (n % 2 === 0 && n != 2) {
+  else if (n % 2 == 0 && n != 2) {
     return (flag = 0);
-  } else if (n % 3 === 0 && n != 3) {
+  } else if (n % 3 == 0 && n != 3) {
     return (flag = 0);
-  } else if (n % 5 === 0 && n != 5) {
+  } else if (n % 5 == 0 && n != 5) {
     return (flag = 0);
-  } else if (n % 7 === 0 && n != 7) {
+  } else if (n % 7 == 0 && n != 7) {
     return (flag = 0);
   } else {
     /*Sử dụng vòng lặp while để kiểm tra có tồn tại ước số nào khác không*/
@@ -28,6 +28,7 @@ function isprime(n) {
         break; /*Chỉ cần tìm thấy 1 ước số là đủ và thoát vòng lặp*/
       }
       i++;
+      console.log("lần thứ", i);
     }
   }
 
@@ -35,8 +36,7 @@ function isprime(n) {
 }
 let count = 0;
 formB5.onsubmit = () => {
-  console.time("dbs");
-  if (isNaN(soBai5.value * 1) === true) {
+  if (isNaN(soBai5.value * 1) === true || soBai5.value * 1 < 2) {
     soBai5.classList.add("is-invalid");
     formB5.classList.remove("was-validated");
     valuesB5.innerText = "";
@@ -45,9 +45,9 @@ formB5.onsubmit = () => {
     if (soBai5.value * 1 < 2) {
       arrPrime = [];
     } else {
-      for (let i = 2; i < soBai5.value * 1; i++) {
-        if (isprime(i) === 1) {
-          arrPrime.push(i);
+      for (let n = 2; n < soBai5.value * 1; n++) {
+        if (isprime(n) === 1) {
+          arrPrime.push(n);
         }
       }
       if (arrPrime.length < 1) {
