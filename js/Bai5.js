@@ -28,7 +28,6 @@ function isprime(n) {
         break; /*Chỉ cần tìm thấy 1 ước số là đủ và thoát vòng lặp*/
       }
       i++;
-      console.log("lần thứ", i);
     }
   }
 
